@@ -1,0 +1,30 @@
+<h1>{{title}}!</h1>
+
+<p [class]="title"></p>
+<input type="text" [(ngModel)]="title" [hidden]="inputShown">
+<button (click)="methode()">Click</button>
+<button (click)="inputShown = !inputShown">Hide or not</button>
+
+<h2>Addition</h2>
+<input type="number" [(ngModel)]="add1">
+<input type="number" [(ngModel)]="add2">
+<p>Résultat</p>
+<input type="text" value="{{add1 + add2}}">
+
+<h2>Personne</h2>
+<label for="nom">Nom</label>
+<input type="text" [(ngModel)]="personne.nom" id="nom">
+<label for="prenom">Prénom</label>
+<input type="text" [(ngModel)]="personne.prenom" id="prenom">
+<label for="age">Age</label>
+<input type="number" [(ngModel)]="personne.age" id="age">
+
+<label for="juc">J'ai un chien?</label>
+<input type="checkbox" id="chien" [(ngModel)]="have_dog">
+<div [hidden]="!have_dog">
+<label for="nomdc">Nom du chien</label>
+<input type="text" [(ngModel)]="personne.chien.nom">
+<label for="racedc">Race du chien</label>
+<input type="text" [(ngModel)]="personne.chien.race">
+</div>
+<button (click)="afficher()">Valider</button>

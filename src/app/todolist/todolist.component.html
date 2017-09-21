@@ -1,0 +1,10 @@
+<label for="">Truc</label>
+<input [(ngModel)] = "item" type="text">
+<button (click)="ajouter(item)">Envoyer</button>
+
+<ul>
+  <li *ngFor="let value of list">
+    {{value}}
+    <button (click)="supprimer(value)">Supprimer</button>
+  </li>
+</ul>

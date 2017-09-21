@@ -1,0 +1,14 @@
+{
+  "petit-chien": [
+    {
+      "id": 1,
+      "nom": "fido",
+      "race": "corgi"
+    },
+    {
+      "id": "2",
+      "nom": "dofi",
+      "race": "chi1"
+    }
+  ]
+}
